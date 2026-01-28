@@ -1,0 +1,82 @@
+name: note_taking_app
+description: "A professional Flutter note-taking app with rich text editing, Material 3 design, and internationalization support."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Design
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.1.0
+  
+  # State Management
+  flutter_riverpod: ^2.4.0
+  riverpod_annotation: ^2.3.0
+  
+  # Rich Text Editor
+  flutter_quill: ^11.5.0
+  
+  # Localization & Internationalization
+  intl: ^0.20.2
+  flutter_localizations:
+    sdk: flutter
+  
+  # File & Image Handling
+  image_picker: ^1.0.4
+  file_picker: ^6.1.0
+  
+  # Database & Storage (for future backend integration)
+  sqflite: ^2.3.0
+  path_provider: ^2.1.0
+  
+  # Notifications
+  flutter_local_notifications: ^16.1.0
+  
+  # Utilities
+  uuid: ^4.0.0
+  
+  # Date & Time
+  table_calendar: ^3.0.9
+  
+  # Animations
+  animations: ^2.0.11
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  build_runner: ^2.4.0
+  riverpod_generator: ^2.3.0
+
+flutter:
+  uses-material-design: true
+
+  # Assets
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+
+  # Fonts
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Roboto-Italic.ttf
+          style: italic
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
